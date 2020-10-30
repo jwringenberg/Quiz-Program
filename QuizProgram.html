@@ -1,0 +1,37 @@
+<html>
+  <head>
+     <title>Quiz Program</title>
+     <script>
+      var score = 0;
+      var questionCount = 0;
+      function gradeQuiz()
+      {
+        if(questionCount == 0)
+        {
+           document.getElementById("question").innnerHTML = "Question 1";
+           //check if the user anwer is equal to something
+           //add one to score if it is correct
+           score = score + 1;
+          //add one questionCount to advance to the next question
+        }
+       end();
+      }
+       function end()
+       {
+             if( questionCount == 3)
+             {
+               //Hide And Reveal Some Stuff
+             }
+       }
+     </script>
+  </head>
+
+  <body>
+    <h2>Fun Quiz!</h2>
+    <span id = "question"></span>
+    <input type = "text" id = "answer">
+    <input type = "button" value = "Submit Answer" onclick = "gradeQuiz()">
+     <!--Hide or Reveal Stuff???-->
+     <span>TEXT</span><!--hidden at beginning maybe??-->
+  </body>
+</html>
